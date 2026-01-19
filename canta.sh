@@ -4,8 +4,6 @@
 
 # song search -0-----0-----
 
-
-# Grabar audio y reconocer canción
 RAW_OUTPUT=$(songrec recognize)
 
 artista=$(echo "$RAW_OUTPUT" | cut -d '-' -f 1 | sed 's/^ *//;s/ *$//')
